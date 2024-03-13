@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "notes": "",
+  "notes": "My sweep keyboard layout for Polish lang ",
   "documentation": "\"This file is a QMK Configurator export. You can import this at <https://config.qmk.fm>. It can also be used directly with QMK's source code.\n\nTo setup your QMK environment check out the tutorial: <https://docs.qmk.fm/#/newbs>\n\nYou can convert this file to a keymap.c using this command: `qmk json2c {keymap}`\n\nYou can compile this keymap using this command: `qmk compile {keymap}`\"\n",
   "keyboard": "ferris/sweep",
   "keymap": "mati2251",
@@ -29,18 +29,18 @@
       "RSFT_T(KC_SCLN)",
       "LCTL_T(KC_Z)",
       "RALT_T(KC_X)",
-      "KC_C",
+      "LALT_T(KC_C)",
       "KC_V",
       "KC_B",
       "KC_N",
       "KC_M",
-      "KC_COMM",
+      "LALT_T(KC_COMM)",
       "RALT_T(KC_DOT)",
       "RCTL_T(KC_SLSH)",
       "LT(1,KC_LGUI)",
       "KC_BSPC",
       "LT(2,KC_SPC)",
-      "KC_ENT"
+      "LT(3,KC_ENT)"
     ],
     [
       "LGUI(KC_1)",
@@ -151,5 +151,5 @@
       "KC_TRNS"
     ]
   ],
-  "author": ""
+  "author": "Mateusz Karłowski"
 }
