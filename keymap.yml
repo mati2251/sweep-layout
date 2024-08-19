@@ -1,0 +1,149 @@
+layout: {qmk_keyboard: ferris/sweep, qmk_layout: LAYOUT_split_3x5_2}
+layers:
+  BASE:
+  - Q
+  - W
+  - E
+  - {t: R, h: LALT}
+  - T
+  - Y
+  - {t: U, h: LALT}
+  - I
+  - O
+  - P
+  - {t: A, h: LSFT}
+  - {t: S, h: LCTL}
+  - {t: D, h: RALT}
+  - {t: F, h: LGUI}
+  - G
+  - H
+  - {t: J, h: RGUI}
+  - {t: K, h: RALT}
+  - {t: L, h: RCTL}
+  - {t: ;, h: RSFT}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: CHAR, h: sticky}
+  - SPC
+  - BSPC
+  - {t: ARRW, h: sticky}
+  CHAR:
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - '&'
+  - '*'
+  - '-'
+  - '='
+  - LSFT
+  - LCTL
+  - LALT
+  - LGUI
+  - ':'
+  - '{'
+  - '['
+  - (
+  - '`'
+  - ''''
+  - ''
+  - \
+  - +
+  - '='
+  - '-'
+  - '}'
+  - ']'
+  - )
+  - <
+  - '>'
+  - {t: NUMB, h: toggle, type: held}
+  - {t: CHAR, h: toggle}
+  - {t: BASE, h: toggle}
+  - {t: NUMB, h: toggle}
+  ARRW:
+  - Gui+ 1
+  - Gui+ 2
+  - Gui+ 3
+  - Gui+ 4
+  - {t: ▽, type: trans}
+  - Ctl+ B
+  - Alt+ 4
+  - Alt+ 3
+  - Alt+ 2
+  - Alt+ 1
+  - LSFT
+  - LCTL
+  - LALT
+  - LGUI
+  - TAB
+  - LEFT
+  - DOWN
+  - UP
+  - RGHT
+  - CW TOGG
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - HOME
+  - PGDN
+  - PGUP
+  - END
+  - ''
+  - {t: NUMB, h: toggle}
+  - {t: BASE, h: toggle}
+  - {t: ARRW, h: toggle}
+  - {t: NUMB, h: toggle, type: held}
+  NUMB:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - LSFT
+  - LCTL
+  - LALT
+  - LGUI
+  - ''
+  - ''
+  - LGUI
+  - LALT
+  - LCTL
+  - LSFT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: BASE, h: toggle}
+  - {t: BASE, h: toggle}
+  - {t: BASE, h: toggle}
+  - {t: BASE, h: toggle}
+combos:
+  - {p: [3,4], k: "ESC", l: ["BASE"]}
+  - {p: [13,14], k: "TAB", l: ["BASE"]}
+  - {p: [5,6], k: "UP", l: ["BASE"]}
+  - {p: [15,16], k: "ENT", l: ["BASE"]}
+  - {p: [16,17], k: "RIGHT", l: ["BASE"]}
+  - {p: [25,26], k: "DOWN", l: ["BASE"]}
