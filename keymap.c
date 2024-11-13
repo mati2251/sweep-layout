@@ -4,10 +4,11 @@
 #define SYMB 1
 #define ARRW 2
 #define NUMB 3
+#define MOUS 4
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [BASE] = LAYOUT(
-        KC_Q, KC_W, KC_E, LALT_T(KC_R), KC_T,                                                       KC_Y, LALT_T(KC_U), KC_I, KC_O, KC_P,
+        KC_Q, KC_W, KC_E, LALT_T(KC_R), LT(MOUS, KC_T),                                                       KC_Y, LALT_T(KC_U), KC_I, KC_O, KC_P,
         LSFT_T(KC_A), LCTL_T(KC_S), RALT_T(KC_D), LGUI_T(KC_F), LT(NUMB, KC_G),                     KC_H, RGUI_T(KC_J), RALT_T(KC_K), RCTL_T(KC_L), RSFT_T(KC_SCLN),
         KC_Z, KC_X, KC_C, KC_V, KC_B,                                                               KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH,
         OSL(SYMB), KC_SPC,                                                                          KC_BSPC, OSL(ARRW)),
@@ -26,6 +27,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, _______,                                                KC_6, KC_7, KC_8, KC_9, KC_0,
         _______, _______, _______, _______, _______,                                                _______, _______, _______, _______, _______,
         _______, _______,                                                                           _______, _______),
+    [MOUS] = LAYOUT(
+        _______, _______, _______, _______, _______,                                                KC_MS_BTN1, KC_MS_BTN3, KC_MS_BTN2, _______, _______,
+        _______, _______, _______, _______, _______,                                                KC_MS_LEFT, KC_MS_DOWN, KC_MS_UP, KC_MS_RIGHT, _______,
+        _______, _______, _______, _______, _______,                                                _______, KC_WH_D, KC_WH_U, _______, _______,
+        _______, _______,                                                                           _______, _______),
 };
 
 enum combos {
@@ -37,7 +43,7 @@ enum combos {
     JK_RIGHT,
 };
 
-const uint16_t PROGMEM rt_combo[] = {LALT_T(KC_R), KC_T, COMBO_END};
+const uint16_t PROGMEM rt_combo[] = {LALT_T(KC_R), LT(MOUS, KC_T), COMBO_END};
 const uint16_t PROGMEM fg_combo[] = {LGUI_T(KC_F), LT(NUMB, KC_G), COMBO_END};
 const uint16_t PROGMEM hj_combo[] = {KC_H, RGUI_T(KC_J), COMBO_END};
 const uint16_t PROGMEM yu_combo[] = {KC_Y, LALT_T(KC_U), COMBO_END};
