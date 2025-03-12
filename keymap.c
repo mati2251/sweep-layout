@@ -5,12 +5,13 @@
 #define ARRW 2
 #define NUMB 3
 #define MOUS 4
+#define FUNC 5
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [BASE] = LAYOUT(
-        KC_Q, KC_W, KC_E, LALT_T(KC_R), LT(MOUS, KC_T),                                                       KC_Y, LALT_T(KC_U), KC_I, KC_O, KC_P,
+        KC_Q, KC_W, KC_E, LALT_T(KC_R), LT(MOUS, KC_T),                                             KC_Y, LALT_T(KC_U), KC_I, KC_O, KC_P,
         LSFT_T(KC_A), LCTL_T(KC_S), RALT_T(KC_D), LGUI_T(KC_F), LT(NUMB, KC_G),                     KC_H, RGUI_T(KC_J), RALT_T(KC_K), RCTL_T(KC_L), RSFT_T(KC_SCLN),
-        KC_Z, KC_X, KC_C, KC_V, KC_B,                                                               KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH,
+        KC_Z, KC_X, KC_C, KC_V, LT(FUNC, KC_B),                                                     KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH,
         OSL(SYMB), KC_SPC,                                                                          KC_BSPC, OSL(ARRW)),
     [SYMB] = LAYOUT(
         KC_EXLM, KC_AT, KC_HASH, KC_DLR, KC_PERC,                                                   KC_CIRC, KC_AMPR, KC_ASTR, _______, _______,
@@ -31,6 +32,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, _______, _______,                                                KC_MS_BTN1, KC_MS_BTN3, KC_MS_BTN2, _______, _______,
         _______, _______, _______, _______, _______,                                                KC_MS_LEFT, KC_MS_DOWN, KC_MS_UP, KC_MS_RIGHT, _______,
         _______, _______, _______, _______, _______,                                                _______, KC_WH_D, KC_WH_U, _______, _______,
+        _______, _______,                                                                           _______, _______),
+    [FUNC] = LAYOUT(
+        _______, _______, _______, _______, _______,                                                KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,
+        KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, _______,                                                KC_F6, KC_F7, KC_F8, KC_F9, KC_F10,
+        _______, _______, _______, _______, _______,                                                KC_F11, KC_F12, _______, _______, _______,
         _______, _______,                                                                           _______, _______),
 };
 
